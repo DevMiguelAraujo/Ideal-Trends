@@ -326,6 +326,9 @@ footer p{
   main{
     flex-direction: column;
   }
+  .main_content ul li{
+    margin: 16px 0;
+  }
   .main_content{
     margin-bottom: 28px;
   }
