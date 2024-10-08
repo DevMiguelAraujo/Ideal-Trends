@@ -1,5 +1,6 @@
 const animationsTargets = document.querySelectorAll("[data-anime]");
 const classVisible = "visible";
+const classAtivado = "active"
 
 const animationScroll = () => {
   const windowTop = window.scrollY + (window.innerHeight * 3) / 4;
@@ -22,3 +23,11 @@ const submenusList = Array.from(document.querySelectorAll(".nav_submenu li"))
 
 submenusList.forEach(submenu => submenu.addEventListener('mouseover', () => {if(submenu.children[1]) submenu.children[1].classList.add(classVisible)}))
 submenusList.forEach(submenu => submenu.addEventListener('mouseout', () => {if(submenu.children[1]) submenu.children[1].classList.remove(classVisible)}))
+
+const menuMobile = document.querySelector(".button_mobile")
+
+menuMobile.addEventListener('click', () => {
+  document.querySelector(".nav_menu").classList.toggle(classAtivado)
+  document.querySelector(".button_mobile").classList.toggle(classAtivado)
+
+})

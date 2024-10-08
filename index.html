@@ -3,9 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Grupo Ideal Trends é um grupo de destaque no mercado, sendo fundado desde 1995 e com atuação em diversos segmentos.">
+    <meta
+      name="description"
+      content="Grupo Ideal Trends é um grupo de destaque no mercado, sendo fundado desde 1995 e com atuação em diversos segmentos."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./reset.css" />
-    <link rel="stylesheet" href="./index.css" />
+
     <link
       rel="stylesheet"
       href="./scripts/splide-4.1.3/dist/css/splide.min.css"
@@ -15,58 +24,126 @@
       href="./imgs/icon_ideal_trends_.ico"
       type="image/x-icon"
     />
+    <link rel="stylesheet" href="./index.css" />
     <title>Ideal Trends</title>
   </head>
   <body>
     <header>
-      <div class="header_tel">
-        <div class="container">
-          <a href="tel:1112341234">11 1234-1234</a>
-          <a href="tel:1112341234">11 1234-1234</a>
+      <div class="bg_header">
+        <div class="header_tel menu_mobile">
+          <div class="button_mobile"><span></span></div>
+          <div class="tel">
+            <a href="tel:1112341234">11 1234-1234</a>
+            <a href="tel:1112341234">11 1234-1234</a>
+          </div>
         </div>
       </div>
       <div class="header_nav container">
         <picture class="logo">
           <img src="./imgs/logo_ideal_trends.png" alt="Logo Ideal Trends" />
         </picture>
-        <nav>
+        <nav class="header_menu">
           <ul class="nav_menu">
             <li>
               <a href="#">HOME</a>
               <ul class="nav_submenu">
-                <li><a href="#">Login</a></li>
-                <li><a href="#">Notícias</a></li>
+                <li>
+                  <a href="#">Login</a>
+                  <ul class="nav_submenu2">
+                    <li><a href="#">Entrar</a></li>
+                    <li><a href="#">Registrar</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">Notícias</a>
+                  <ul class="nav_submenu2">
+                    <li><a href="#">Nacionais</a></li>
+                    <li><a href="#">Globais</a></li>
+                  </ul>
+                </li>
               </ul>
             </li>
             <li>
               <a href="#">EMPRESA</a>
               <ul class="nav_submenu">
-                <li><a href="#">Carreira</a></li>
-                <li><a href="#">Ofertas</a></li>
-                <li><a href="#">Planos</a></li>
+                <li>
+                  <a href="#">Carreira</a>
+                  <ul class="nav_submenu2">
+                    <li><a href="#">Candidatar</a></li>
+                    <li><a href="#">Aréas de Atuação</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">Planos</a>
+                  <ul class="nav_submenu2">
+                    <li><a href="#">Planos Empresariais</a></li>
+                    <li><a href="#">Sociedade</a></li>
+                  </ul>
+                </li>
               </ul>
             </li>
             <li>
               <a href="#">CLIENTES</a>
               <ul class="nav_submenu">
-                <li><a href="#">Parceiros</a></li>
-                <li><a href="#">Locais de <br/> Atendimento</a></li>
-                <li><a href="#">Planos</a></li>
+                <li>
+                  <a href="#">Parceiros</a>
+                  <ul class="nav_submenu2">
+                    <li><a href="#">Soluções Industriais</a></li>
+                    <li><a href="#">Ideal Multibusiness</a></li>
+                    <li><a href="#">Ideal Pet Care</a></li>
+                    <li><a href="#">Mentorias Ideal</a></li>
+                    <li><a href="#">Ideal Pay</a></li>
+                    <li><a href="#">Ideal Marketing</a></li>
+                    <li><a href="#">Ideal Odonto</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#"
+                    >Locais de <br />
+                    Atendimento</a
+                  >
+                  <ul class="nav_submenu2">
+                    <li><a href="#">São Paulo</a></li>
+                    <li><a href="#">Rio de Janeiro</a></li>
+                    <li><a href="#">On-line</a></li>
+                  </ul>
+                </li>
               </ul>
             </li>
             <li>
               <a href="#">CONTATO</a>
               <ul class="nav_submenu">
-                <li><a href="#">Redes</a></li>
-                <li><a href="#">Sites</a></li>
-                <li><a href="#">Ajuda</a></li>
+                <li>
+                  <a href="#">Redes</a>
+                  <ul class="nav_submenu2 last">
+                    <li><a href="#">X</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">E-mail</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">Sites</a>
+                  <ul class="nav_submenu2 last">
+                    <li><a href="#">Ideal Group</a></li>
+                    <li><a href="#">GIT</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">Ajuda</a>
+                  <ul class="nav_submenu2 last">
+                    <li><a href="#">Reclame Aqui</a></li>
+                    <li><a href="#">Whatsapp</a></li>
+                    <li><a href="#">IA de Ajuda</a></li>
+                  </ul>
+                </li>
               </ul>
             </li>
           </ul>
         </nav>
       </div>
     </header>
-    <div class="splide" role="group" aria-label="Slider Banner">
+    <article class="splide" role="group" aria-label="Slider Banner">
       <div class="splide__track container">
         <ul class="splide__list">
           <li class="splide__slide">
@@ -86,12 +163,12 @@
           </li>
         </ul>
       </div>
-    </div>
+    </article>
     <main class="container">
       <div class="main_content">
-        <h2>Ideal Trends</h2>
+        <h1>Grupo Ideal Trends</h1>
         <div>
-          <h3>Características:</h3>
+          <h2>Características:</h2>
           <ul>
             <li>
               O grupo é composto por mais de 30 empresas, sendo um grupo
@@ -119,47 +196,49 @@
       </picture>
     </main>
     <section class="boxes_destaque container">
-      <h2>BOXES DE DESTAQUE</h2>
+      <h2>Boxes de destaque</h2>
       <ul>
         <li data-anime="right">
-          <div>
+          <div class="box">
             <picture>
-              <img src="./imgs/globe.jpg" alt="Globo terrestre" />
+              <img src="./imgs/globe.png" alt="Globo terrestre" />
             </picture>
-            <a href="./">Conectando todo mundo.</a>
+            <a href="#">Conectando todo mundo.</a>
           </div>
         </li>
         <li data-anime="right">
-          <div>
+          <div class="box">
             <picture>
-              <img src="./imgs/smartphone.jpg" alt="Celular" />
+              <img src="./imgs/smartphone.png" alt="Celular" />
             </picture>
-            <a href="./">Tudo na tela do seu celular.</a>
+            <a href="#">Tudo na tela do seu celular.</a>
           </div>
         </li>
         <li data-anime="right">
-          <div>
+          <div class="box">
             <picture>
               <img src="./imgs/design_idea.jpg" alt="Icone ideia" />
             </picture>
-            <a href="./">Ideias Inovadoras.</a>
+            <a href="#">Ideias Inovadoras.</a>
           </div>
         </li>
         <li data-anime="right">
-          <div>
-            <picture><img src="./imgs/rocket_vector.jpg" alt="Foguete Vetorial" /></picture>
-            <a href="./">Crescimento acelerado.</a>
+          <div class="box">
+            <picture
+              ><img src="./imgs/rocket_vector.jpg" alt="Foguete Vetorial"
+            /></picture>
+            <a href="#">Crescimento acelerado.</a>
           </div>
         </li>
       </ul>
     </section>
     <footer>
-      <nav>
+      <nav class="footer_nav">
         <ul>
-          <li><a href="#">HOME</a></li>
-          <li><a href="#">EMPRESA</a></li>
-          <li><a href="#">CLIENTES</a></li>
-          <li><a href="#">CONTATO</a></li>
+          <li><h3 href="#">HOME</h3></li>
+          <li><h3 href="#">EMPRESA</h3></li>
+          <li><h3 href="#">CLIENTES</h3></li>
+          <li><h3 href="#">CONTATO</h3></li>
         </ul>
       </nav>
       <p>Todos direitos reservados.</p>
