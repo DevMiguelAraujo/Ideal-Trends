@@ -20,7 +20,8 @@ img {
 }
 
 .container {
-  margin: 0 calc(100vw / 10);
+  max-width: 1200px;
+  margin: 0 auto
 }
 
 header {
